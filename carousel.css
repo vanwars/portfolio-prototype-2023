@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#section1 {}
+
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    height: 40vw;
+    width: 70vw;
+    object-fit: contain;
+    /* Adjust this to your preferred image width */
+}
+
+.carousel-slide {
+    min-width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -22vw;
+    z-index: 1000;
+    width: 70vw;
+}
+
+.carousel-control {
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1000;
+}
